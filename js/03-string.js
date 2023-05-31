@@ -67,7 +67,7 @@ const lentele1 = x + " * " + a + " = " + Result1 + "\n" + x + " * " + b + " = " 
  
     
 console.log(lentele1);
-
+export {lentele1};
 
 const xx = 7;
 const a2 = 1;
