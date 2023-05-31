@@ -81,27 +81,75 @@ const h9 = 8;
 const i9 = 9;
 const j10 = 10;
 
-const Result11 = xx * a2;
-const Result22 = xx * b3;
-const Result33 = xx * c4;
-const Result44 = xx * d5;
-const Result55 = xx * e6;
-const Result66 = xx * f7;
-const Result77 = xx * g8;
-const Result88 = xx * h9;
-const Result99 = xx * i9;
-const Result101 = xx * j10;
+const result11 = xx * a2;
+const result22 = xx * b3;
+const result33 = xx * c4;
+const result44 = xx * d5;
+const result55 = xx * e6;
+const result66 = xx * f7;
+const result77 = xx * g8;
+const result88 = xx * h9;
+const result99 = xx * i9;
+const result101 = xx * j10;
 
-const lentele2 = `${xx} * ${a2} = ${Result11}
-${xx} * ${b3} = ${Result22}
-${xx} * ${c4} = ${Result33}
-${xx} * ${d5} = ${Result44}
-${xx} * ${e6} = ${Result55}
-${xx} * ${f7} = ${Result66}
-${xx} * ${g8} = ${Result77}
-${xx} * ${h9} = ${Result88}
-${xx} * ${i9} = ${Result99}
-${xx} * ${j10} = ${Result101}`;
+const lentele2 = `${xx} * ${a2} = ${result11}
+${xx} * ${b3} = ${result22}
+${xx} * ${c4} = ${result33}
+${xx} * ${d5} = ${result44}
+${xx} * ${e6} = ${result55}
+${xx} * ${f7} = ${result66}
+${xx} * ${g8} = ${result77}
+${xx} * ${h9} = ${result88}
+${xx} * ${i9} = ${result99}
+${xx} * ${j10} = ${result101}`;
 
 
 console.log(lentele2);
+console.clear();
+
+
+
+const str = `Pavyzdys`;
+console.log(str, 8, ">>>", str.length);
+let strIndex = 0;
+console.log(str[strIndex++]);
+console.log(str[strIndex++]);
+console.log(str[strIndex++]);
+console.log(str[strIndex++]);
+console.log(str[strIndex++]);
+console.log(str[strIndex++]);
+console.log(str[strIndex++]);
+console.log(str[strIndex++]);
+
+console.log(str[strIndex++]);
+
+console.clear();
+
+const userFirstName = "Chuck";
+const userLastName = "Norris";
+
+const userAbbr = `${userFirstName[0]}.${userLastName[0]}.`;
+console.log(userAbbr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
