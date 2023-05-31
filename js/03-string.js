@@ -63,7 +63,7 @@ const Result8 = x * h;
 const Result9 = x * i;
 const Result10 = x * j;
 
-const lentele1 = x + " * " + a + " = " + Result1 + " \r\n\ " + x + " * " + b + " = " + Result2 + " \r\n\ " + x + " * " + c + " = " + Result3 + " \r\n\ " + x + " * " + d + " = " + Result4 + " \r\n\ " + x + " * " + e + " = " + Result5 + " \r\n\ " + x + " * " + f + " = " + Result6 + " \r\n\ " + x + " * " + g + " = " + Result7 + " \r\n\ " + x + " * " + g + " = " + Result7 + " \r\n\ " + x + " * " + h + " = " + Result8 + " \r\n\ " + x + " * " + i + " = " + Result9 + " \r\n\ " + x + " * " + j + " = " + Result10 + " \r\n\ ";
+const lentele1 = x + " * " + a + " = " + Result1 + "\n" + x + " * " + b + " = " + Result2 + "\n" + x + " * " + c + " = " + Result3 + "\n" + x + " * " + d + " = " + Result4 + "\n" + x + " * " + e + " = " + Result5 + "\n" + x + " * " + f + " = " + Result6 + "\n" + x + " * " + g + " = " + Result7 + "\n" + x + " * " + g + " = " + Result7 + "\n" + x + " * " + h + " = " + Result8 + "\n" + x + " * " + i + " = " + Result9 + "\n" + x + " * " + j + " = " + Result10 + "\n";
  
     
 console.log(lentele1);
