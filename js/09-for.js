@@ -87,8 +87,8 @@ console.clear();
 
 //      1)
 
-const startas = 0;
-const pabaiga = 100;
+const startas = -50;
+const pabaiga = 50;
 let y = 0;
 
 for (let i = startas; i <= pabaiga; i++) {
@@ -118,7 +118,7 @@ const daliklis = 3;
 let counteris = 0;
 
 for (let i = star; i <= en; i++) {
-    if (i % 3 === 0) {
+    if (i % daliklis === 0) {
         counteris++;
     }
 }
@@ -137,16 +137,18 @@ const list2 = [1, 2, 2, 3];
 const list3 = [5, 4, 3, 2, 1];
 const list4 = [5, 4, 3, 2, 1, 1, 1, 1, 1, 2, 2, 3];
 
-const ieskomas = 1;
-let kiekis = 0;
+const ieskomas = 4;
+
 
 function ieskoti(list, ieskoti) {
+    let kiekis = 0;
     for (let i = 0; i < list.length; i++) {
         const numba = list[i];
         if (numba === ieskoti) {
             kiekis++;
         }
-    }
+    } 
+    return kiekis
 }
 
 const variab1 = ieskoti(list1, ieskomas);
@@ -159,16 +161,33 @@ console.log(variab2);
 console.log(variab3);
 console.log(variab4);
 
+console.clear();
 
 
+function intervale(nuo, iki) {
 
 
+    return iki * (iki + 1) / 2;
+}
 
 
+console.log(intervale(0, 1));
+console.log(intervale(0, 1_000));
+console.log(intervale(0, 1_000_000_000_000));
 
 
+console.clear();
 
+function multiply(a, b) {
+    const rez = a * b;
+    return rez;
+}
 
+console.log(multiply(2, 2));
+console.log(multiply(7, 5));
+console.log(multiply(-7, 5));
+console.log(multiply(7, -5));
+console.log(multiply(-7, -5));
 
 
 
