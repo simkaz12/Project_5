@@ -189,8 +189,140 @@ console.log(multiply(-7, 5));
 console.log(multiply(7, -5));
 console.log(multiply(-7, -5));
 
+console.clear();
+//          1)
+function tusciaFunkcija () {
+    return false;
+}
+console.log(tusciaFunkcija());
+
+console.log('--------------');
+//          2)
 
 
+function daugyba (a, b) {
+    if (typeof a !== 'number' || !isFinite(a)) {
+        return `pateiktas skaicius nera skaicius.`
+    } else if (typeof b !== 'number' || !isFinite(b)) {
+        return `pateiktas skaicius nera skaicius.`
+    }
+    let sum = 0;
+    sum = a * b;
+    return sum
+}
+
+
+console.log(daugyba(3, 7));
+console.log('--------------');
+
+
+//          3)
+
+function skaitmenuKiekisSkaiciuje (a) {
+    if (typeof a !== 'number' || !isFinite(a)) {
+        return `Pateikta netinkamo tipo reikšmė.`
+    } else {
+    const b = '' + a;
+    return b.length; }
+}
+
+
+console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+console.log( skaitmenuKiekisSkaiciuje( true ) );
+console.log( skaitmenuKiekisSkaiciuje( 'asd' ) );
+console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+
+console.log('--------------');
+
+
+
+//          4)
+
+function didziausiasSkaiciusSarase (a) {
+    if (typeof a !== 'object') {
+        return `Pateikta netinkamo tipo reikšmė.`
+    } else if (a.length === 0) {
+        return 'Pateiktas sąrašas negali būti tuščias.'
+    }
+    let diziausiareiksme = a[0];
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] > diziausiareiksme) {
+        diziausiareiksme = a[i];
+        }
+    }
+    
+    return diziausiareiksme;
+}
+
+console.log( didziausiasSkaiciusSarase( [ 1 ] ) );
+console.log( didziausiasSkaiciusSarase( [ 1, 2, 3 ] ) );
+console.log( didziausiasSkaiciusSarase( [ -5, 78, 14, 0, 18 ] ) );
+console.log( didziausiasSkaiciusSarase( [ 69, 69, 69, 69, 66 ] ) );
+
+console.log( didziausiasSkaiciusSarase( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ) );
+console.log( didziausiasSkaiciusSarase( 'pomidoras' ) );
+console.log( didziausiasSkaiciusSarase( [] ) );
+
+
+console.log('--------------');
+
+
+//          5)
+
+function isrinktiRaides (a, b) {
+    let naujasString = '';
+    if (typeof a !== 'string') {
+        return `Pirmasis kintamasis yra netinkamo tipo.`
+    } else if (a.length === 0 || a.length > 100) {
+        return `Pirmojo kintamojo reikšmė yra netinkamo dydžio.`
+    } 
+    if (typeof b !== 'number' || !isFinite(b)) {
+        return `Antrasis kintamasis yra netinkamo tipo.`
+    } else if (b === 0) {
+        return 'Antrasis kintamasis turi būti didesnis už nulį.'
+    } else if (b > a.length) {
+        return 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.'
+    } else { 
+        for (let i = 0; i < a.length; i += b) {
+        naujasString += a[i];
+        }
+        return naujasString;
+    }
+    
+}
+
+console.log( isrinktiRaides( 'abcdefg', 2 ) );
+console.log( isrinktiRaides( 'abcdefghijkl', 3 ) );
+console.log( isrinktiRaides( 'abc', 0 ) );
+
+console.log( isrinktiRaides( 'abc', 4 ) );
+console.log( isrinktiRaides( 1561, 2 ) );
+
+console.log('--------------');
+//          6)
+
+function dalyba (a, b) {
+    if (typeof a !== 'number' || !isFinite(a) || a === 0) {
+        return `Pirmas skaicius nera skaicius.`
+    } else if (typeof b !== 'number' || !isFinite(b) || b ===0) {
+        return `Antras skaicius nera skaicius.`
+    }
+    const rezultatas = a / b;
+    return rezultatas;
+}
+
+
+console.log(dalyba(10, 2));
+console.log(dalyba('asss', 2));
+console.log(dalyba(10, 'dsfdsdf'));
+console.log(dalyba([], 2));
+console.log(dalyba(10, []));
+console.log(dalyba(Infinity, 2));
+console.log(dalyba(10, -Infinity));
+console.log(dalyba(10, NaN));
+console.log(dalyba(NaN, 2));
 
 
 
