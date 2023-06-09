@@ -189,7 +189,16 @@ console.log(multiply(-7, 5));
 console.log(multiply(7, -5));
 console.log(multiply(-7, -5));
 
+
+
+
+
+
+
 console.clear();
+
+
+
 //          1)
 function tusciaFunkcija () {
     return false;
@@ -197,6 +206,9 @@ function tusciaFunkcija () {
 console.log(tusciaFunkcija());
 
 console.log('--------------');
+
+
+
 //          2)
 
 
@@ -206,8 +218,7 @@ function daugyba (a, b) {
     } else if (typeof b !== 'number' || !isFinite(b)) {
         return `pateiktas skaicius nera skaicius.`
     }
-    let sum = 0;
-    sum = a * b;
+    const sum = a * b;
     return sum
 }
 
@@ -221,13 +232,21 @@ console.log('--------------');
 function skaitmenuKiekisSkaiciuje (a) {
     if (typeof a !== 'number' || !isFinite(a)) {
         return `Pateikta netinkamo tipo reikšmė.`
+    } else if (a < 0) {
+        const b = '' + (a * -1);
+        return b.length;
+    } else if (a === 0) {
+        return 0;
     } else {
     const b = '' + a;
     return b.length; }
 }
 
 
+console.log( skaitmenuKiekisSkaiciuje( 0 ) );
+
 console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+console.log( skaitmenuKiekisSkaiciuje( -5 ) );
 console.log( skaitmenuKiekisSkaiciuje( 781 ) );
 console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
 console.log( skaitmenuKiekisSkaiciuje( true ) );
@@ -241,7 +260,7 @@ console.log('--------------');
 //          4)
 
 function didziausiasSkaiciusSarase (a) {
-    if (typeof a !== 'object') {
+    if (!Array.isArray(a)) {
         return `Pateikta netinkamo tipo reikšmė.`
     } else if (a.length === 0) {
         return 'Pateiktas sąrašas negali būti tuščias.'
