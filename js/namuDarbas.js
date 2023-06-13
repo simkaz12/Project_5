@@ -10,7 +10,7 @@ function isrinktiRaides(a, b) {
     if (typeof b !== 'number' || !isFinite(b)) {
         return `Antrasis kintomasis yra netinkamo tipo.`
     }
-    if (b <= 0) {
+    if (b === 0) {
         return `Antrasis kintamasis turi būti didesnis už nulį.`
     }
     if (b > a.length) {
@@ -21,20 +21,25 @@ function isrinktiRaides(a, b) {
         return `Antrasis kintamasis turi būti sveikas skaicius.`
     }
     let naujasString = '';
-    for (let i = 0; i < a.length; i += b) {
+    if (b > 0) {
+        for (let i = b - 1; i < a.length; i += b) {
         naujasString += a[i];
         }
         return naujasString;
+    } else {
+        for (let i = a.length + b; i >= 0; i += b)
+        naujasString += a[i]; 
+    }
 
 }
 
 
 console.log('------------');
 console.log(isrinktiRaides('labas',2));
-console.log(isrinktiRaides('lsdsdkjkhkhhcs',3));
+console.log(isrinktiRaides('kopustas',3));
 console.log(isrinktiRaides('labassdsfgttsfrbsdxfbf',4));
-console.log(isrinktiRaides('labsfdghjhghfdvbgnhthgfdsvbfngjfcgbgcfgas',10));
 console.log('------------');
+console.log(isrinktiRaides('labsfdghjhghfdvbgnhthgfdsvbfngjfcgbgcfgas', 0.2));
 console.log(isrinktiRaides(21315,2));
 console.log(isrinktiRaides(21315,'lasa'));
 console.log(isrinktiRaides(true, 'sdds'));
@@ -61,7 +66,7 @@ console.log(isrinktiRaides(-15354, ));
 console.log(isrinktiRaides({}));
 
 
-console.clear();
+ console.clear();
 
 function dalyba(a, b) {
     if (typeof a !== 'number' || !isFinite(a)) {
@@ -93,7 +98,7 @@ console.log(dalyba(true, []));
 console.log(dalyba([], true ));
 console.log(dalyba(564, true ));
 console.log(dalyba(false, 'SFKKD'));
-console.log(dalyba(isrinktiRaides, false));
+console.log(dalyba(dalyba, false));
 console.log(dalyba());
 console.log(dalyba(undefined, null));
 console.log(dalyba('labas', 0.5));

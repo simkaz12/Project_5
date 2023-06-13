@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "object" : "nodemon ./js/10-object.js",
     "typeOf" : "nodemon ./js/typeOf.js",
     "namuDarbas": "nodemon ./js/namuDarbas.js",
     "for": "nodemon ./js/09-for.js",
