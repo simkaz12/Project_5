@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "arrayMethod" : "nodemon ./js/11-arrayMethod.js",
     "object" : "nodemon ./js/10-object.js",
     "typeOf" : "nodemon ./js/typeOf.js",
     "namuDarbas": "nodemon ./js/namuDarbas.js",
