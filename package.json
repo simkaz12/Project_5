@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "destruct" : "nodemon ./js/14-destruct.js",
     "loops" : "nodemon ./js/13-loops.js",
     "arrow" : "nodemon ./js/12-arrow.js",
     "arrayMethod" : "nodemon ./js/11-arrayMethod.js",
