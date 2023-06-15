@@ -1,5 +1,5 @@
 console.clear();
-
+/*
 function isrinktiRaides(a, b) {
     if (typeof a !== 'string') {
         return `Pirmasis kintamasis yra netinkamo tipo.`
@@ -113,3 +113,29 @@ console.log(dalyba(null, 5));
 console.log(dalyba(0, 'addds'));
 console.log(dalyba(-15354, ));
 console.log(dalyba({}));
+*/
+
+
+function getPlanetName(id){
+    if (id === 1) {
+        return 'Mercury'
+    }else if (id === 2) {
+        return 'Venus'
+    }else if (id === 3) {
+        return 'Earth'
+    }else if (id === 4) {
+        return 'Mars'
+    }else if (id === 5) {
+        return 'Jupiter'
+    }else if (id === 6) {
+        return 'Saturn'
+    }else if (id === 7) {
+        return 'Uranus'
+    }else if (id === 8) {
+        return 'Neptune'
+    };
+  }
+
+console.log(getPlanetName(2));
+console.log(getPlanetName(5));
+console.log(getPlanetName(3));

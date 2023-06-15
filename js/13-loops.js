@@ -56,6 +56,69 @@ console.log('sum:', sum4);
 console.log('----------------------------');
 
 
+// for-in (object)
+
+const user = {
+    name: 'Jonas',
+    age: 99,
+    isMarried: true,
+};
+
+console.log(user);
+console.log(user.name);
+console.log(user.age);
+console.log(user.isMarried);
+
+for (let i = 0; i < Object.keys(user).length; i++) {
+    console.log(i, Object.keys(user)[i], '---', user[Object.keys(user)[i]]);
+}
+
+
+for (const x in user) {
+    console.log(x, ':', user[x]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
